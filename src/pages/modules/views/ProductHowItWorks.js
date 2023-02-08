@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -107,10 +106,11 @@ function ProductHowItWorks() {
           variant="contained"
           component="a"
           target='_blank'
-          href="https://www.instagram.com/prettyradcraftsco/"
+          // this was originally an href directed to an instagram
           sx={{ mt: 8 }}
         >
           Order Now
+          {/* make this button auto scroll to email form */}
         </Button>
       </Container>
     </Box>

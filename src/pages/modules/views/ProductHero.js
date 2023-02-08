@@ -37,14 +37,11 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
         sx={{ minWidth: 200 }}
       >
         Shop Now
+        {/* make this button scroll down to next section */}
       </Button>
-      {/* <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Discover the experience
-      </Typography> */}
     </ProductHeroLayout>
   );
 }
