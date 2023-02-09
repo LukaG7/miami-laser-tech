@@ -1,9 +1,8 @@
-import { ThemeProvider } from '@mui/material/styles';
+import WithRoot from '../modules/withRoot';
+
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider>
       <Component {...pageProps} />
-    </ThemeProvider>
   )
 }

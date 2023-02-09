@@ -7,11 +7,12 @@ import ProductCTA from '../modules/views/ProductCTA'
 import ProductSmokingHero from '../modules/views/ProductSmokingHero'
 import AppFooter from '../modules/views/AppFooter'
 import { Inter } from '@next/font/google'
+import withRoot from '../modules/withRoot'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <AppAppBar />
@@ -25,3 +26,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default withRoot(Home)
