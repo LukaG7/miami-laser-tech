@@ -19,7 +19,7 @@ export default function ProductHero() {
       {/* Increase the network loading priority of the background image. */}
       <Image
         style={{ display: 'none' }}
-        src='../public/static/images/logojpg'
+        src={myLogoo}
         width='200'
         height='200'
         alt="increase priority"
@@ -40,7 +40,7 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        sx={{ minWidth: 200 }}
+        sx={{ minWidth: 200, bgcolor: '#0e92d6' }}
       >
         Shop Now
         {/* make this button scroll down to next section */}

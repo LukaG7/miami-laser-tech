@@ -15,13 +15,14 @@ const item = {
 const number = {
   fontSize: 24,
   fontFamily: 'default',
-  color: 'secondary.main',
+  color: '#0e92d6',
   fontWeight: 'medium',
 };
 
 const image = {
   height: 55,
   my: 4,
+  color: '#0e92d6'
 };
 
 function ProductHowItWorks() {
@@ -101,13 +102,13 @@ function ProductHowItWorks() {
           </Grid>
         </div>
         <Button
-          color="secondary"
+          // color="secondary"
           size="large"
           variant="contained"
           component="a"
           target='_blank'
           // this was originally an href directed to an instagram
-          sx={{ mt: 8 }}
+          sx={{ mt: 8, bgcolor:'#0e92d6' }}
         >
           Order Now
           {/* make this button auto scroll to email form */}
