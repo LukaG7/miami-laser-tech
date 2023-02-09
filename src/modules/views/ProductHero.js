@@ -2,9 +2,9 @@ import * as React from 'react';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
-import random from '../images/random.jpg'
+import logo from '../images/logopng.png'
 const backgroundImage =
-random;
+logo;
 
 export default function ProductHero() {
   return (
@@ -21,8 +21,8 @@ export default function ProductHero() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h2" marked="center">
-        Cute Crafts For Anyone
+      <Typography color="inherit" align="center" variant="h3">
+        Proffesional Engravings
       </Typography>
       <Typography
         color="inherit"
@@ -30,10 +30,10 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Jibber jabber stuff and other words for placement as an example.
+        Lorem ipsum
       </Typography>
       <Button
-        color="secondary"
+        // color="secondary"
         variant="contained"
         size="large"
         component="a"

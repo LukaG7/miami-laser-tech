@@ -4,15 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-// import prettyrad from '../images/prettyradlogo.PNG'
-// import babysets from '../images/babysets.PNG'
-// import badgereel from '../images/badgereels.PNG'
-// import badgetoppers from '../images/badgetoppers.PNG'
-// import keychains from '../images/keychains.PNG'
-// import bookmarks from '../images/bookmarks.PNG'
-// import custombm from '../images/custombm.PNG'
-// import customkc from '../images/customkc.PNG'
-// import ornaments from '../images/ornaments.PNG'
+import mylogo from '../images/logojpg.jpg';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -64,7 +56,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    // url: badgetoppers,
+    url: mylogo,
     title: 'Badge Toppers',
     width: '40%',
   },
@@ -114,7 +106,7 @@ export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+      Possibilities Are Endless
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (

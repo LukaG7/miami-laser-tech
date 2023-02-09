@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
+import { height } from '@mui/system';
 
 const rightLink = {
   fontSize: 16,
@@ -14,8 +15,8 @@ function AppAppBar() {
   return (
     <div>
       <AppBar position="fixed">
-        <Toolbar style={{ justifyContent: 'space-between' }}>
-          <Box style={{ flex: 1 }} />
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
+          <Box sx={{ flex: 1 }} />
           <Link
             variant="h6"
             underline="none"
@@ -23,9 +24,9 @@ function AppAppBar() {
             href='/'
             style={{ fontSize: 24 }}
           >
-            {'Pretty Rad Crafts'}
+            {'Miami Laser Tech'}
           </Link>
-          <Box style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
           </Box>
         </Toolbar>
       </AppBar>
