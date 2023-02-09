@@ -5,23 +5,21 @@ import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
 import myLogoo from '../../../public/static/images/logojpg.JPG';
 
-// const backgroundImage = <Image src={myLogoo}/>;
+// const backgroundImage = <Image src={}/>;
 
 export default function ProductHero() {
   return (
     <ProductHeroLayout
-      // sxBackground={{
-      //   backgroundImage: "../../../public/static/images/logojpg.JPG",
-      //   backgroundColor: '#7fc7d9', // Average color of the background image.
-      //   backgroundPosition: 'center',
-      // }}
+      sxBackground={{
+        backgroundImage: `url(${myLogoo})`,
+        backgroundColor: '#7fc7d9', // Average color of the background image.
+        backgroundPosition: 'center',
+      }}
     >
       {/* Increase the network loading priority of the background image. */}
-      <Image
+      <img
         style={{ display: 'none' }}
         src={myLogoo}
-        width='200'
-        height='200'
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h3">
@@ -40,7 +38,7 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        sx={{ minWidth: 200, bgcolor: '#0e92d6' }}
+        sx={{ minWidth: 200 }}
       >
         Shop Now
         {/* make this button scroll down to next section */}
