@@ -2,23 +2,26 @@ import * as React from 'react';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
-import logo from '../images/logopng.png'
-const backgroundImage =
-logo;
+import Image from 'next/image';
+import myLogoo from '../../../public/static/images/logojpg.JPG';
+
+// const backgroundImage = <Image src={myLogoo}/>;
 
 export default function ProductHero() {
   return (
     <ProductHeroLayout
-      sxBackground={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: '#7fc7d9', // Average color of the background image.
-        backgroundPosition: 'center',
-      }}
+      // sxBackground={{
+      //   backgroundImage: "../../../public/static/images/logojpg.JPG",
+      //   backgroundColor: '#7fc7d9', // Average color of the background image.
+      //   backgroundPosition: 'center',
+      // }}
     >
       {/* Increase the network loading priority of the background image. */}
-      <img
+      <Image
         style={{ display: 'none' }}
-        src={backgroundImage}
+        src='../public/static/images/logojpg'
+        width='200'
+        height='200'
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h3">
