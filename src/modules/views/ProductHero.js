@@ -12,20 +12,20 @@ export default function ProductHero() {
     <ProductHeroLayout
       sxBackground={{
         backgroundImage: `url(${logo.src})`,
-        backgroundColor: '#7fc7d9', // Average color of the background image.
+        // backgroundColor: '#7fc7d9', // Average color of the background image.
         backgroundPosition: 'center',
       }}
     >
-      <Typography color="inherit" align="center" variant="h3">
+      <Typography color="black" align="center" variant="h3">
         Proffesional Engravings
       </Typography>
       <Typography
-        color="inherit"
+        color="black"
         align="center"
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Lorem ipsum
+        {/* Lorem ipsum */}
       </Typography>
       <Button
         // color="secondary"

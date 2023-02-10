@@ -5,11 +5,11 @@ import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import { height } from '@mui/system';
 
-const rightLink = {
-  fontSize: 16,
-  color: 'common.white',
-  ml: 3,
-};
+// const rightLink = {
+//   fontSize: 16,
+//   color: 'common.white',
+//   ml: 3,
+// };
 
 function AppAppBar() {
   return (

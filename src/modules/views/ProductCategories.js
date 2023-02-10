@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import Image from 'next/image';
 import corvette from 'public/static/images/corvette.jpg'
 import baby from 'public/static/images/baby.png'
 import cheese from 'public/static/images/cheese.jpg'
