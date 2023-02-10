@@ -87,9 +87,6 @@ function ProductCTA() {
             }}
           />
           <Box
-          // component="img"
-          // src={logo}
-          // alt="call to action"
           sx={{
             position: 'absolute',
             top: -28,
