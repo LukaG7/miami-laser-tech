@@ -6,7 +6,7 @@ import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
-// import formimg from '../images/formimg.PNG';
+import logo from 'public/static/images/logojpg.jpg'
 
 function ProductCTA() {
   const [open, setOpen] = React.useState(false);
@@ -87,19 +87,21 @@ function ProductCTA() {
             }}
           />
           <Box
-            component="img"
-            // src={formimg}
-            alt="call to action"
-            sx={{
-              position: 'absolute',
-              top: -28,
-              left: -28,
-              right: 0,
-              bottom: 0,
-              width: '70%',
-              maxWidth: 600,
-            }}
+          // component="img"
+          // src={logo}
+          // alt="call to action"
+          sx={{
+            position: 'absolute',
+            top: -28,
+            left: -28,
+            right: 0,
+            bottom: 0,
+            width: '90%',
+            maxWidth: 900,
+            background: `url(${logo.src})`
+          }}
           />
+
         </Grid>
       </Grid>
       <Snackbar

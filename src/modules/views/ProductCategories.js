@@ -4,8 +4,15 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-// import mylogo from '../images/logojpg.jpg';
-import myLogo from '../../../public/static/images/logojpg.jpg'
+import Image from 'next/image';
+import corvette from 'public/static/images/corvette.jpg'
+import baby from 'public/static/images/baby.png'
+import cheese from 'public/static/images/cheese.jpg'
+import cuttingboard from 'public/static/images/cuttingboard.jpg'
+import glass from 'public/static/images/glass.jpg'
+import leathbox from 'public/static/images/leathbox.jpg'
+import leather from 'public/static/images/leather.jpg'
+
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -57,37 +64,37 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: myLogo,
-    title: 'Badge Toppers',
+    url: leather.src,
+    title: 'Leather',
     width: '40%',
   },
   {
-    // url: badgereel,
-    title: 'Badge Reels',
+    url: baby.src,
+    title: 'Baby',
     width: '20%',
   },
   {
-    // url: babysets,
-    title: 'Baby Sets',
+    url: corvette.src,
+    title: 'Corvette',
     width: '40%',
   },
   {
-    // url: keychains,
-    title: 'Keychains',
+    url: leathbox.src,
+    title: 'LeatherBox',
     width: '38%',
   },
   {
-    // url: prettyrad,
-    title: 'Pretty Rad',
+    url: glass.src,
+    title: 'Glass',
     width: '38%',
   },
   {
-    // url: bookmarks,
-    title: 'bookmarks',
+    url: cheese.src,
+    title: 'Cheese Board',
     width: '24%',
   },
   {
-    // url: custombm,
+    url: cuttingboard.src,
     title: 'Custom Bookmarks',
     width: '40%',
   },
@@ -128,7 +135,12 @@ export default function ProductCategories() {
                 backgroundPosition: 'center 40%',
                 backgroundImage: `url(${image.url})`,
               }}
-            />
+            >
+              {/* <Image 
+                src={image.url}
+              /> */}
+            </Box>
+
             <ImageBackdrop className="imageBackdrop" />
             <Box
               sx={{

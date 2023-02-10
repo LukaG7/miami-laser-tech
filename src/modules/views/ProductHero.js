@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
-import myLogoo from '../../../public/static/images/logojpg.JPG';
+import logo from 'public/static/images/logojpg.jpg'
 
 // const backgroundImage = <Image src={}/>;
 
@@ -11,17 +11,11 @@ export default function ProductHero() {
   return (
     <ProductHeroLayout
       sxBackground={{
-        backgroundImage: `url(${myLogoo})`,
+        backgroundImage: `url(${logo.src})`,
         backgroundColor: '#7fc7d9', // Average color of the background image.
         backgroundPosition: 'center',
       }}
     >
-      {/* Increase the network loading priority of the background image. */}
-      <img
-        style={{ display: 'none' }}
-        src={myLogoo}
-        alt="increase priority"
-      />
       <Typography color="inherit" align="center" variant="h3">
         Proffesional Engravings
       </Typography>
