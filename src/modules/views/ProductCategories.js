@@ -12,7 +12,8 @@ import cuttingboard from 'public/static/images/cuttingboard.jpg'
 import glass from 'public/static/images/glass.jpg'
 import leathbox from 'public/static/images/leathbox.jpg'
 import leather from 'public/static/images/leather.jpg'
-
+import sign from 'public/static/images/sign.png'
+import savethedate from 'public/static/images/savethedate.jpg'
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -69,8 +70,8 @@ const images = [
     width: '40%',
   },
   {
-    url: baby.src,
-    title: 'Baby',
+    url: cheese.src,
+    title: 'Cheese Board',
     width: '20%',
   },
   {
@@ -89,23 +90,23 @@ const images = [
     width: '38%',
   },
   {
-    url: cheese.src,
-    title: 'Cheese Board',
+    url: baby.src,
+    title: 'Baby',
     width: '24%',
   },
   {
     url: cuttingboard.src,
-    title: 'Custom Bookmarks',
+    title: 'Cutting Board',
     width: '40%',
   },
   {
-    // url: ornaments,
-    title: 'Ornaments',
+    url: savethedate.src,
+    title: 'Save the Date',
     width: '20%',
   },
   {
-    // url: customkc,
-    title: 'Custom Ornaments',
+    url: sign.src,
+    title: 'Signs',
     width: '40%',
   },
 ];
