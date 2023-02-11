@@ -95,7 +95,7 @@ function ProductCTA() {
             bottom: 0,
             width: '90%',
             maxWidth: 900,
-            background: `url(${logo.src})`
+            // background: `url(${logo.src})`
           }}
           />
 
