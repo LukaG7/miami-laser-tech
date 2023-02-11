@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -20,6 +21,22 @@ function ProductCTA() {
     setOpen(false);
   };
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
+      .then((result) => {
+          alert('Message Sent!')
+          window.location.reload(false)
+          console.log(result.text);
+          console.log("message sent")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
       <Grid container>
@@ -33,7 +50,7 @@ function ProductCTA() {
               px: 3,
             }}
           >
-            <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
+            <Box component="form" ref={form} onSubmit={sendEmail} sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
                 Receive offers
               </Typography>
@@ -43,18 +60,21 @@ function ProductCTA() {
               <TextField
                 noBorder
                 placeholder="Your name"
+                name="user_name"
                 variant="standard"
                 sx={{ width: '100%', mt: 3, mb: 2 }}
               />
               <TextField
                 noBorder
                 placeholder="Your email"
+                name="user_email"
                 variant="standard"
                 sx={{ width: '100%', mt: 3, mb: 2 }}
               />
               <TextField
                 noBorder
                 placeholder="Message"
+                name="message"
                 variant="standard"
                 sx={{ width: '100%', pb: '20px', mt: 4, mb: 2 }}
               />
@@ -62,6 +82,7 @@ function ProductCTA() {
                 type="submit"
                 color="primary"
                 variant="contained"
+                value='send'
                 sx={{ width: '100%' }}
               >
                 Send Message

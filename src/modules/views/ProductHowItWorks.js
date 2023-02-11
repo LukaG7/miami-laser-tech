@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRef } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -24,6 +25,12 @@ const image = {
   my: 4,
   color: '#0e92d6'
 };
+
+// const ref = useRef(null);
+
+//   const handleClick = () => {
+//     ref.current?.scrollIntoView({behavior: 'smooth'});
+//   };
 
 function ProductHowItWorks() {
   return (
@@ -107,7 +114,7 @@ function ProductHowItWorks() {
           variant="contained"
           component="a"
           target='_blank'
-          // this was originally an href directed to an instagram
+          // onClick={handleClick}
           sx={{ mt: 8, bgcolor:'#0e92d6' }}
         >
           Order Now
