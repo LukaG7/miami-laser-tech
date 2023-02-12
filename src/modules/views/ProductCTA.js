@@ -56,7 +56,7 @@ function ProductCTA() {
               </Typography>
               <Typography variant="h5">
                 Message me to learn more about our product!
-              </Typography>
+              </Typography> 
               <TextField
                 noBorder
                 placeholder="Your name"
