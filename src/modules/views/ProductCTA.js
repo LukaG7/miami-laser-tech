@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -7,7 +7,7 @@ import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
-import logo from 'public/static/images/logojpg.jpg'
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function ProductCTA() {
   const [open, setOpen] = React.useState(false);
@@ -26,7 +26,7 @@ function ProductCTA() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
+    emailjs.sendForm("service_8w4sjl3", "template_k9g5fja", form.current, "AsqXIP3NZtfkRQFA7")
       .then((result) => {
           alert('Message Sent!')
           window.location.reload(false)
@@ -36,6 +36,10 @@ function ProductCTA() {
           console.log(error.text);
       });
   };
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
@@ -77,6 +81,10 @@ function ProductCTA() {
                 name="message"
                 variant="standard"
                 sx={{ width: '100%', pb: '20px', mt: 4, mb: 2 }}
+              />
+              <ReCAPTCHA
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              onChange={onChange}
               />
               <Button
                 type="submit"
