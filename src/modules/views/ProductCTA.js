@@ -82,7 +82,7 @@ function ProductCTA() {
                 type="submit"
                 color="primary"
                 variant="contained"
-                value='send'
+                value='Send'
                 sx={{ width: '100%' }}
               >
                 Send Message
