@@ -64,6 +64,7 @@ function ProductCTA() {
               <TextField
                 noBorder
                 placeholder="Your name"
+                type="text"
                 name="user_name"
                 variant="standard"
                 sx={{ width: '100%', mt: 3, mb: 2 }}
@@ -71,6 +72,7 @@ function ProductCTA() {
               <TextField
                 noBorder
                 placeholder="Your email"
+                type="email"
                 name="user_email"
                 variant="standard"
                 sx={{ width: '100%', mt: 3, mb: 2 }}

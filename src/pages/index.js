@@ -8,6 +8,7 @@ import ProductSmokingHero from '../modules/views/ProductSmokingHero'
 import AppFooter from '../modules/views/AppFooter'
 import { Inter } from '@next/font/google'
 import withRoot from '../modules/withRoot'
+import ScrollToTop from 'react-scroll-to-top'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,6 +16,7 @@ const inter = Inter({ subsets: ['latin'] })
 const Home = () => {
   return (
     <div>
+      <ScrollToTop smooth color='#0e92d6'/>
       <AppAppBar />
       <ProductHero />
       <ProductValues />
