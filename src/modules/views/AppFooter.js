@@ -24,11 +24,12 @@ const iconStyle = {
   height: 48,
   display: 'flex',
   justifyContent: 'center',
+  color: 'white',
   alignItems: 'center',
-  backgroundColor: 'warning.main',
+  backgroundColor: '#0e92d6',
   mr: 1,
   '&:hover': {
-    bgcolor: 'warning.dark',
+    bgcolor: '#1b78be',
   },
 };
 
