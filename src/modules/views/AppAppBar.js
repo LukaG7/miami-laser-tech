@@ -29,6 +29,11 @@ function AppAppBar() {
             <Image 
             src={logo}
             width={90}
+            sx={{
+              display: "flex",
+              justifyContent: "left",
+              
+            }}
             />
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
