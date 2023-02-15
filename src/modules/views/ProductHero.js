@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
-import logo from 'public/static/images/logojpg.jpg'
+import logo from 'public/static/images/logopng.png'
 
 // const backgroundImage = <Image src={}/>;
 
@@ -12,8 +12,8 @@ export default function ProductHero() {
     <ProductHeroLayout
       sxBackground={{
         backgroundImage: `url(${logo.src})`,
-        // backgroundColor: '#7fc7d9', // Average color of the background image.
-        backgroundPosition: 'center',
+        backgroundColor: '#FAF9F6',
+        backgroundPosition: 'center'
       }}
     >
       <Typography color="black" align="center" variant="h3">

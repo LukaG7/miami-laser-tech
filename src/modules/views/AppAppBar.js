@@ -4,6 +4,8 @@ import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import { height } from '@mui/system';
+import logo from 'public/static/images/logopng.png'
+import Image from 'next/image';
 
 // const rightLink = {
 //   fontSize: 16,
@@ -24,7 +26,10 @@ function AppAppBar() {
             href='/'
             sx={{ fontSize: 24, justifyContent: 'flex-start' }}
           >
-            {'Miami Laser Tech'}
+            <Image 
+            src={logo}
+            width={90}
+            />
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
           </Box>
