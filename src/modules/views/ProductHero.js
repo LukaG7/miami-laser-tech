@@ -25,7 +25,8 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        {/* Lorem ipsum */}
+        A signage and apparel company that offers affordable, high-quality products. We
+        use the latest laser technology to create signs and apparel for all needs.  
       </Typography>
       <Button
         // color="secondary"
