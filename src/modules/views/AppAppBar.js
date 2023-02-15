@@ -14,19 +14,19 @@ import { height } from '@mui/system';
 function AppAppBar() {
   return (
     <div>
-      <AppBar position="fixed">
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
+      <AppBar position="fixed" color="">
+        <Toolbar sx={{ justifyContent: 'flex-start',  }}>
           <Box sx={{ flex: 1 }} />
           <Link
             variant="h6"
             underline="none"
-            color="inherit"
+            color="black"
             href='/'
-            style={{ fontSize: 24 }}
+            sx={{ fontSize: 24, justifyContent: 'flex-start' }}
           >
             {'Miami Laser Tech'}
           </Link>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
           </Box>
         </Toolbar>
       </AppBar>
