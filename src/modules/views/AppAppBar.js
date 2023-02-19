@@ -4,7 +4,7 @@ import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import { height } from '@mui/system';
-import logo from 'public/static/images/logopng.png'
+import logo from 'public/static/images/ML.jpg'
 import Image from 'next/image';
 
 // const rightLink = {
@@ -28,7 +28,7 @@ function AppAppBar() {
           >
             <Image 
             src={logo}
-            width={90}
+            width={40}
             sx={{
               display: "flex",
               justifyContent: "left",
