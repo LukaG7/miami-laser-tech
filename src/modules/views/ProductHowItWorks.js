@@ -115,7 +115,10 @@ function ProductHowItWorks() {
           component="a"
           target='_blank'
           // onClick={handleClick}
-          sx={{ mt: 8, bgcolor:'#0e92d6' }}
+          sx={{ mt: 8, bgcolor:'#0e92d6', 
+          '&:hover': {
+            bgcolor: '#1b78be',
+          }, }}
         >
           Order Now
           {/* make this button auto scroll to email form */}

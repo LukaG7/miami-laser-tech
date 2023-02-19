@@ -33,7 +33,10 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        sx={{ minWidth: 200 }}
+        sx={{ minWidth: 200, bgcolor:'#0e92d6',
+        '&:hover': {
+          bgcolor: '#1b78be',
+        }, }}
       >
         Shop Now
         {/* make this button scroll down to next section */}
