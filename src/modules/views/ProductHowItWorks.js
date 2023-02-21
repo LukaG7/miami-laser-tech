@@ -19,7 +19,7 @@ const number = {
   color: '#0e92d6',
   fontWeight: 'medium',
 };
-
+ 
 const image = {
   height: 55,
   my: 4,
