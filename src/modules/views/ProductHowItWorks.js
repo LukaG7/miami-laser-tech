@@ -74,7 +74,7 @@ function ProductHowItWorks() {
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  Message me on Instagram!
+                  Send me a message!
                 </Typography>
               </Box>
             </Grid>
@@ -88,7 +88,7 @@ function ProductHowItWorks() {
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  First come, first served. The quicker you order the quicker you'll have it!
+                  lorem ipsum in lobo lorem.
                 </Typography>
               </Box>
             </Grid>

@@ -29,21 +29,23 @@ function ProductValues() {
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
+                component="img"epi
+                src="/static/images/newlaser.png"
+                alt="laser"
+                sx={{ height: 65 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                perfect for the holidays
+                Laser Engraving
               </Typography>
               <Typography variant="h5">
                 {
-                  'Our ornaments make a perfect gift for the holidays that brighten up your tree like nothing else.'
+                  'Laser engraved signs are one of the most reliable ways to display and share information.'
                 }
 
                 {
-                  'Pick from our premade ornaments or send a special request for a custom one.'
+                  ' Whether it\'s instructions, warnings, or advertisements, laser engraving ensures words stay intact and legible for a long time.'
+                 
+                  
                 }
               </Typography>
             </Box>
@@ -52,19 +54,20 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues2.svg"
+                src="/static/images/theshirt.png"
                 alt="graph"
-                sx={{ height: 55 }}
+                sx={{ height: 65 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Birthday gifts
+                Apparel
               </Typography>
               <Typography variant="h5">
                 {
-                  'Perfect birthday gifts like our bookmarks, pins and badge reels.'
+                  'Sublimated apparel is the newest and most stylish way to show off your individual style!'
                 }
 
-                {'You won\'t find products equivalent in creativity or quality anywhere else.'}
+                {'Using a special process, we are able to turn any design into a vibrant print that lasts.'
+}
               </Typography>
             </Box>
           </Grid>
@@ -72,16 +75,16 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues3.svg"
+                src="/static/images/finalsign.png"
                 alt="clock"
-                sx={{ height: 55 }}
+                sx={{ height: 65 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Custom made just for you
+                Signs
               </Typography>
               <Typography variant="h5">
-                {'Want a badge reel but can\'t find the exact design you want? Not a problem! '}
-                {'We can customize our products just for you.'}
+                {'Laser cut signs are a unique way to make your business stand out! '}
+                {'These beautiful, one-of-a-kind custom signs command attention and give passersby an unforgettable impression.'}
               </Typography>
             </Box>
           </Grid>
