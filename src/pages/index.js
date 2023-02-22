@@ -16,6 +16,9 @@ const inter = Inter({ subsets: ['latin'] })
 const Home = () => {
   return (
     <div>
+      <head>
+        <title>Miami Laser Tech</title>
+      </head>
       <ScrollToTop smooth color='#0e92d6'/>
       <AppAppBar />
       <ProductHero />

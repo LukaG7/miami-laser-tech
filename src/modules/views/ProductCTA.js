@@ -56,10 +56,10 @@ function ProductCTA() {
           >
             <Box component="form" ref={form} onSubmit={sendEmail} sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                Order Here!
               </Typography>
               <Typography variant="h5">
-                Message me to learn more about our product!
+                Message me for an order!
               </Typography> 
               <TextField
                 noBorder
