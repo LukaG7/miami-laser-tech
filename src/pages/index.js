@@ -9,6 +9,8 @@ import AppFooter from '../modules/views/AppFooter'
 import { Inter } from '@next/font/google'
 import withRoot from '../modules/withRoot'
 import ScrollToTop from 'react-scroll-to-top'
+import Head from 'next/head'
+import logo from 'public/static/images/ML.jpg'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,9 +18,10 @@ const inter = Inter({ subsets: ['latin'] })
 const Home = () => {
   return (
     <div>
-      <head>
+      <Head>
         <title>Miami Laser Tech</title>
-      </head>
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+      </Head>
       <ScrollToTop smooth color='#0e92d6'/>
       <AppAppBar />
       <ProductHero />
