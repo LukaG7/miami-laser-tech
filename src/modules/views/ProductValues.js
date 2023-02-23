@@ -66,7 +66,7 @@ function ProductValues() {
                   'Sublimated apparel is the newest and most stylish way to show off your individual style!'
                 }
 
-                {'Using a special process, we are able to turn any design into a vibrant print that lasts.'
+                {' Using a special process, we are able to turn any design into a vibrant print that lasts.'
 }
               </Typography>
             </Box>
