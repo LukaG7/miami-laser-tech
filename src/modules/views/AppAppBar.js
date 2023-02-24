@@ -4,8 +4,9 @@ import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import { height } from '@mui/system';
-import logo from 'public/static/images/ML.jpg'
+import logo from 'public/static/images/mlpnglogo.png'
 import Image from 'next/image';
+import '../../styles/Home.module.css'
 
 // const rightLink = {
 //   fontSize: 16,
@@ -16,10 +17,11 @@ import Image from 'next/image';
 function AppAppBar() {
   return (
     <div>
-      <AppBar position="fixed" color="">
+      <AppBar position="fixed" color="" className='appbardiv'>
         <Toolbar sx={{ justifyContent: 'flex-start',  }}>
-          <Box sx={{ flex: 1 }} />
+          <Box sx={{ flex: -100 }} />
           <Link
+            className='linktag'
             variant="h6"
             underline="none"
             color="black"
@@ -27,16 +29,44 @@ function AppAppBar() {
             sx={{ fontSize: 24, justifyContent: 'flex-start' }}
           >
             <Image 
+            className='appbar-logo'
             src={logo}
+            alt='logo'
             width={40}
             sx={{
-              display: "flex",
-              justifyContent: "left",
-              
+              display: "flex", justifyContent: "flex-end",
             }}
             />
           </Link>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
+
+          <Box 
+          sx={{ flex: 1, display: "flex", justifyContent: "flex-end", flexDirection: "row"}}
+          > 
+          <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              href=""
+              target="_blank"
+            >
+              {'About'}
+            </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href=""
+              target="_blank"
+            >
+              {'Products'}
+            </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href=""
+              target="_blank"
+            >
+              {'Order'}
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
