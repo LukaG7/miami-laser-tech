@@ -57,7 +57,7 @@ function AppAppBar() {
               href=""
               target="_blank"
             >
-              {'Products'}
+              {'Gallery'}
             </Link>
             <Link
               variant="h6"

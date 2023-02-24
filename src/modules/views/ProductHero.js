@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
-import logo from 'public/static/images/logopng.png'
+import logo from 'public/static/images/option3.jpg'
 
 // const backgroundImage = <Image src={}/>;
 
@@ -11,22 +11,21 @@ export default function ProductHero() {
   return (
     <ProductHeroLayout
       sxBackground={{
-        // backgroundImage: `url(${logo.src})`,
+        backgroundImage: `url(${logo.src})`,
         backgroundColor: '#FAF9F6',
         backgroundPosition: 'center'
       }}
     >
-      <Typography color="black" align="center" variant="h3">
-        Proffesional Engravings
+      <Typography color="white" align="center" variant="h4">
+        Engrave Everything!
       </Typography>
       <Typography
-        color="black"
+        color="white"
         align="center"
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        A signage and apparel company that offers affordable, high-quality products. We
-        use the latest laser technology to create signs and apparel for all needs.  
+        Personalized products and engraving services for lasting memories. 
       </Typography>
       <Button
         // color="secondary"
