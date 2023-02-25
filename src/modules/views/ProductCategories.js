@@ -13,6 +13,7 @@ import leathbox from 'public/static/images/leathbox.jpg'
 import leather from 'public/static/images/leather.jpg'
 import sign from 'public/static/images/sign.png'
 import savethedate from 'public/static/images/savethedate.jpg'
+import { Link } from 'react-scroll';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -112,10 +113,17 @@ const images = [
 
 export default function ProductCategories() {
   return (
-    <Container component="section" sx={{ mt: 8, mb: 4 }}>
+    <Container id="gallery" component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" align="center" component="h2">
       Possibilities Are Endless
       </Typography>
+      <Link
+              to='order'
+              spy={true}
+              smooth={true}
+              offset={2}
+              duration={500}
+            >
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
           <ImageIconButton
@@ -124,6 +132,7 @@ export default function ProductCategories() {
               width: image.width,
             }}
           >
+            
             <Box
               sx={{
                 position: 'absolute',
@@ -140,6 +149,7 @@ export default function ProductCategories() {
                 src={image.url}
               /> */}
             </Box>
+            
 
             <ImageBackdrop className="imageBackdrop" />
             <Box
@@ -166,8 +176,11 @@ export default function ProductCategories() {
               </Typography>
             </Box>
           </ImageIconButton>
+          
         ))}
+       
       </Box>
+      </Link>
     </Container>
   );
 }

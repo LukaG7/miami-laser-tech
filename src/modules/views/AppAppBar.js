@@ -1,12 +1,13 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import { Link } from 'react-scroll';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import { height } from '@mui/system';
 import logo from 'public/static/images/mlpnglogo.png'
 import Image from 'next/image';
 import '../../styles/Home.module.css'
+import { Button } from '@mui/material';
 
 // const rightLink = {
 //   fontSize: 16,
@@ -16,16 +17,21 @@ import '../../styles/Home.module.css'
 
 function AppAppBar() {
   return (
-    <div>
+    <div id='top'>
       <AppBar position="fixed" color="" className='appbardiv'>
         <Toolbar sx={{ justifyContent: 'flex-start',  }}>
           <Box sx={{ flex: -100 }} />
           <Link
+            to='top'
             className='linktag'
             variant="h6"
             underline="none"
             color="black"
-            href='/'
+            spy={true}
+            smooth={true}
+            offset={2}
+            duration={500}
+            href=""
             sx={{ fontSize: 24, justifyContent: 'flex-start' }}
           >
             <Image 
@@ -41,32 +47,56 @@ function AppAppBar() {
 
           <Box 
           sx={{ flex: 1, display: "flex", justifyContent: "flex-end", flexDirection: "row"}}
-          > 
-          <Link
+          >
+            <Button>
+            <Link
+              activeClass='active'
               color="inherit"
               variant="h6"
               underline="none"
-              href=""
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={2}
+              duration={500}
               target="_blank"
             >
-              {'About'}
+              About
             </Link>
+              </Button> 
+          
+              <Button>
             <Link
+              activeClass='active'
+              color="inherit"
               variant="h6"
               underline="none"
-              href=""
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={2}
+              duration={500}
               target="_blank"
             >
-              {'Gallery'}
+              Gallery
             </Link>
+              </Button> 
+              <Button>
             <Link
+              activeClass='active'
+              color="inherit"
               variant="h6"
               underline="none"
-              href=""
+              to="order"
+              spy={true}
+              smooth={true}
+              offset={2}
+              duration={500}
               target="_blank"
             >
-              {'Order'}
+              Order
             </Link>
+              </Button> 
           </Box>
         </Toolbar>
       </AppBar>

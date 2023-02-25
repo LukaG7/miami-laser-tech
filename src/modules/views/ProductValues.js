@@ -14,6 +14,7 @@ const item = {
 
 function ProductValues() {
   return (
+    <div id='about'>
     <Box
       component="section"
       sx={{ display: 'flex', overflow: 'hidden', bgcolor: '#F8F0E3' }}
@@ -91,6 +92,7 @@ function ProductValues() {
         </Grid>
       </Container>
     </Box>
+    </div>
   );
 }
 

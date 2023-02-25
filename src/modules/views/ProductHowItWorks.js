@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
+import { Link } from 'react-scroll';
 
 const item = {
   display: 'flex',
@@ -34,6 +35,7 @@ const image = {
 
 function ProductHowItWorks() {
   return (
+    <div id='order'>
     <Box
       component="section"
       sx={{ display: 'flex', bgcolor: '#F8F0E3', overflow: 'hidden' }}
@@ -108,23 +110,35 @@ function ProductHowItWorks() {
             </Grid>
           </Grid>
         </div>
-        <Button
-          // color="secondary"
-          size="large"
-          variant="contained"
-          component="a"
-          target='_blank'
-          // onClick={handleClick}
-          sx={{ mt: 8, bgcolor:'#0e92d6', 
-          '&:hover': {
-            bgcolor: '#1b78be',
-          }, }}
-        >
-          Order Now
-          {/* make this button auto scroll to email form */}
-        </Button>
+          <Link
+            activeClass='active'
+            color="inherit"
+            variant="h6"
+            underline="none"
+            to="email"
+            spy={true}
+            smooth={true}
+            offset={2}
+            duration={500}
+            target="_blank"
+          >
+            <Button
+              size="large"
+              variant="contained"
+              component="a"
+              target='_blank'
+              // onClick={handleClick}
+              sx={{ mt: 8, bgcolor:'#0e92d6', 
+              '&:hover': {
+                  bgcolor: '#1b78be',
+              }, }}
+            >
+            Order Now
+          </Button>
+        </Link>
       </Container>
     </Box>
+    </div>
   );
 }
 

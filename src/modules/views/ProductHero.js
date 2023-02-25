@@ -4,6 +4,7 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
 import logo from 'public/static/images/option3.jpg'
+import { Link } from 'react-scroll';
 
 // const backgroundImage = <Image src={}/>;
 
@@ -27,6 +28,18 @@ export default function ProductHero() {
       >
         Personalized products and engraving services for lasting memories. 
       </Typography>
+      <Link
+        activeClass='active'
+        color="inherit"
+        variant="h6"
+        underline="none"
+        to="gallery"
+        spy={true}
+        smooth={true}
+        offset={2}
+        duration={500}
+        target="_blank"
+      >
       <Button
         // color="secondary"
         variant="contained"
@@ -40,6 +53,7 @@ export default function ProductHero() {
         Shop Now
         {/* make this button scroll down to next section */}
       </Button>
+      </Link>
     </ProductHeroLayout>
   );
 }
