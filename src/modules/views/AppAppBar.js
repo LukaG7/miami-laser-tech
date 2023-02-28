@@ -48,7 +48,7 @@ function AppAppBar() {
           <Box 
           sx={{ flex: 1, display: "flex", justifyContent: "flex-end", flexDirection: "row"}}
           >
-            <Button>
+
             <Link
               activeClass='active'
               color="inherit"
@@ -61,11 +61,11 @@ function AppAppBar() {
               duration={500}
               target="_blank"
             >
-              About
-            </Link>
-              </Button> 
-          
               <Button>
+                About
+              </Button> 
+            </Link>
+ 
             <Link
               activeClass='active'
               color="inherit"
@@ -78,10 +78,11 @@ function AppAppBar() {
               duration={500}
               target="_blank"
             >
-              Gallery
-            </Link>
-              </Button> 
               <Button>
+                Gallery
+              </Button> 
+            </Link>
+
             <Link
               activeClass='active'
               color="inherit"
@@ -94,9 +95,11 @@ function AppAppBar() {
               duration={500}
               target="_blank"
             >
-              Order
-            </Link>
+              <Button>
+                Order
               </Button> 
+            </Link>
+          
           </Box>
         </Toolbar>
       </AppBar>
