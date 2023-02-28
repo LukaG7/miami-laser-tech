@@ -10,6 +10,7 @@ import { Inter } from '@next/font/google'
 import withRoot from '../modules/withRoot'
 import ScrollToTop from 'react-scroll-to-top'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,4 +35,6 @@ const Home = () => {
   )
 }
 
-export default withRoot(Home)
+// export default withRoot(Home)
+
+export default dynamic (() => Promise.resolve(Home), {ssr: false})
