@@ -81,7 +81,7 @@ const images = [
   },
   {
     url: leathbox.src,
-    title: 'LeatherBox',
+    title: 'Leather Box',
     width: '38%',
   },
   {
