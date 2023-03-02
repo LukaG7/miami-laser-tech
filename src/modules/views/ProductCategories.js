@@ -4,16 +4,17 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import corvette from '../../../public/static/images/corvette.jpg'
-import baby from '../../../public/static/images/baby.png'
-import cheese from '../../../public/static/images/cheese.jpg'
-import cuttingboard from '../../../public/static/images/cuttingboard.jpg'
-import glass from '../../../public/static/images/glass.jpg'
-import leathbox from '../../../public/static/images/leathbox.jpg'
-import leather from '../../../public/static/images/leather.jpg'
-import sign from '../../../public/static/images/sign.png'
-import savethedate from '../../../public/static/images/savethedate.jpg'
+import corvette from 'public/static/images/corvette.jpg';
+import baby from 'public/static/images/baby.png';
+import cheese from 'public/static/images/cheese.jpg';
+import cuttingboard from 'public/static/images/cuttingboard.jpg';
+import glass from 'public/static/images/glass.jpg';
+import leathbox from 'public/static/images/leathbox.jpg';
+import leather from 'public/static/images/leather.jpg';
+import sign from 'public/static/images/sign.png';
+import savethedate from 'public/static/images/savethedate.jpg';
 import { Link } from 'react-scroll';
+import Image from 'next/image';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -132,7 +133,7 @@ export default function ProductCategories() {
               width: image.width,
             }}
           >
-            
+            {/* <Image></Image> */}
             <Box
               sx={{
                 position: 'absolute',
