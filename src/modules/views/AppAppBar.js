@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import { height } from '@mui/system';
-import logo from 'public/static/images/mlpnglogo.png'
+import logo from '../../public/static/images/mlpnglogo.png'
 import Image from 'next/image';
 import '../../styles/Home.module.css'
 import { Button } from '@mui/material';

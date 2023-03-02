@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
-import logo from 'public/static/images/option3.jpg'
+import logo from '../../public/static/images/option3.jpg'
 import { Link } from 'react-scroll';
 
 // const backgroundImage = <Image src={}/>;
