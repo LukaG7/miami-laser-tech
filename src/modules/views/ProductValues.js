@@ -1,9 +1,12 @@
 import * as React from 'react';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import curvylines from '../../public/static/themes/onepirate/productCurvyLines.png';
+import laser from '../../public/static/images/newlaser.png'
+import shirt from '../../public/static/images/theshirt.png'
+import sign from '../../public/static/images/finalsign.png'
 
 const item = {
   display: 'flex',
@@ -22,7 +25,7 @@ function ProductValues() {
       <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={curvylines.src}
           alt="curvy lines"
           sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
         />
@@ -31,7 +34,7 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"epi
-                src="/static/images/newlaser.png"
+                src={laser.src}
                 alt="laser"
                 sx={{ height: 65 }}
               />
@@ -55,7 +58,7 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/images/theshirt.png"
+                src={shirt.src}
                 alt="graph"
                 sx={{ height: 65 }}
               />
@@ -76,7 +79,7 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/images/finalsign.png"
+                src={sign.src}
                 alt="clock"
                 sx={{ height: 65 }}
               />

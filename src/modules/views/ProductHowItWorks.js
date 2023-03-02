@@ -6,6 +6,10 @@ import Container from '@mui/material/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import { Link } from 'react-scroll';
+import curvylines from '../../public/static/themes/onepirate/productCurvyLines.png';
+import icon1 from '../../public/static/themes/onepirate/productHowItWorks1.svg'
+import icon2 from '../../public/static/themes/onepirate/productHowItWorks2.svg'
+import icon3 from '../../public/static/themes/onepirate/productHowItWorks3.svg'
 
 const item = {
   display: 'flex',
@@ -52,7 +56,7 @@ function ProductHowItWorks() {
       >
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={curvylines.src}
           alt="curvy lines"
           sx={{
             pointerEvents: 'none',
@@ -71,7 +75,7 @@ function ProductHowItWorks() {
                 <Box sx={number}>1.</Box>
                 <Box
                   component="img"
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
+                  src={icon1.src}
                   alt="suitcase"
                   sx={image}
                 />
@@ -85,12 +89,12 @@ function ProductHowItWorks() {
                 <Box sx={number}>2.</Box>
                 <Box
                   component="img"
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
+                  src={icon2.src}
                   alt="graph"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  lorem ipsum in lobo lorem.
+                  Discuss pricing.
                 </Typography>
               </Box>
             </Grid>
@@ -99,12 +103,12 @@ function ProductHowItWorks() {
                 <Box sx={number}>3.</Box>
                 <Box
                   component="img"
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
+                  src={icon3.src}
                   alt="clock"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
+                  {'Stay in touch through emails! '}
                 </Typography>
               </Box>
             </Grid>
