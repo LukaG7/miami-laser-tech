@@ -5,7 +5,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import corvette from 'public/static/images/corvette.jpg'
-import baby from 'public/static/images/baby.PNG'
+import baby from 'public/static/images/baby.png'
 import cheese from 'public/static/images/cheese.jpg'
 import cuttingboard from 'public/static/images/cuttingboard.JPG'
 import glass from 'public/static/images/glass.JPG'
