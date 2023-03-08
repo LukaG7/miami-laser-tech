@@ -85,7 +85,7 @@ function ProductCTA() {
                 sx={{ width: '100%', pb: '20px', mt: 4, mb: 2 }}
               />
               <ReCAPTCHA
-              sitekey="6LdNH-UkAAAAAPiSDPGa4sS4DL1W4vWAlYV4hBjV"
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
               onChange={onChange}
               />
               <Button
