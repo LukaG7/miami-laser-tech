@@ -39,11 +39,11 @@ function ProductValues() {
                 sx={{ height: 65 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Laser Engraving
+                Engraving
               </Typography>
               <Typography variant="h5">
                 {
-                  'Laser engraved signs are one of the most reliable ways to display and share information.'
+                  'Make a lasting memory for your loved ones! Our machines can engravem, cut and etch almost any surface creating a professional and detailed design.'
                 }
 
                 {
@@ -51,6 +51,23 @@ function ProductValues() {
                  
                   
                 }
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={item}>
+              <Box
+                component="img"
+                src={sign.src}
+                alt="clock"
+                sx={{ height: 65 }}
+              />
+              <Typography variant="h6" sx={{ my: 5 }}>
+                Signs
+              </Typography>
+              <Typography variant="h5">
+                {'From nursery signs to commercial grade ADA applications we will help you design and create the design you need. '}
+                {'We offer acrylic, metal, wood and vinyl signs all custom made for any application.'}
               </Typography>
             </Box>
           </Grid>
@@ -67,31 +84,15 @@ function ProductValues() {
               </Typography>
               <Typography variant="h5">
                 {
-                  'Sublimated apparel is the newest and most stylish way to show off your individual style!'
+                  'We offer various apparel embellishment options to suit your needs.'
                 }
 
-                {' Using a special process, we are able to turn any design into a vibrant print that lasts.'
+                {' We offer embroidery, screen printing, vinyl and sublimination at low quantities.'
 }
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src={sign.src}
-                alt="clock"
-                sx={{ height: 65 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Signs
-              </Typography>
-              <Typography variant="h5">
-                {'Laser cut signs are a unique way to make your business stand out! '}
-                {'These beautiful, one-of-a-kind custom signs command attention and give passersby an unforgettable impression.'}
-              </Typography>
-            </Box>
-          </Grid>
+          
         </Grid>
       </Container>
     </Box>

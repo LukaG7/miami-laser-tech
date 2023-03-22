@@ -77,7 +77,7 @@ const images = [
   },
   {
     url: corvette.src,
-    title: 'Corvette',
+    title: 'Acrylic Signage',
     width: '40%',
   },
   {
@@ -87,12 +87,12 @@ const images = [
   },
   {
     url: glass.src,
-    title: 'Glass',
+    title: 'School and Corporate Awards',
     width: '38%',
   },
   {
     url: baby.src,
-    title: 'Baby',
+    title: 'Baby and Nursery Signage',
     width: '24%',
   },
   {

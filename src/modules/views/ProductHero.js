@@ -17,13 +17,13 @@ export default function ProductHero() {
         backgroundPosition: 'center'
       }}
     >
-      <Typography color="white" align="center" variant="h4">
+      <Typography color="white" align="center" variant="h2">
         Engrave Everything!
       </Typography>
       <Typography
         color="white"
         align="center"
-        variant="h5"
+        variant="h4"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
         Personalized products and engraving services for lasting memories. 
