@@ -5,8 +5,7 @@ import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
 import logo from '../../public/static/images/option3.jpg'
 import { Link } from 'react-scroll';
-
-// const backgroundImage = <Image src={}/>;
+// import '../../public/static/styles/styless.css';
 
 export default function ProductHero() {
   return (
@@ -17,14 +16,15 @@ export default function ProductHero() {
         backgroundPosition: 'center'
       }}
     >
-      <Typography color="white" align="center" variant="h2">
+      <Typography color="white" align="center" variant="h2" >
         Engrave Everything!
       </Typography>
       <Typography
         color="white"
         align="center"
         variant="h4"
-        sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
+        className="title-text"
+        sx={{ mb: 4, mt: { sx: 4, sm: 10 }, textShadow: 1}}
       >
         Personalized products and engraving services for lasting memories. 
       </Typography>
@@ -54,6 +54,7 @@ export default function ProductHero() {
         {/* make this button scroll down to next section */}
       </Button>
       </Link>
+      
     </ProductHeroLayout>
   );
 }
