@@ -5,6 +5,8 @@ import ProductHeroLayout from './ProductHeroLayout';
 import Image from 'next/image';
 import logo from '../../public/static/images/option3.jpg'
 import { Link } from 'react-scroll';
+import styles from '../../styles/Home.module.css'
+
 // import '../../public/static/styles/styless.css';
 
 export default function ProductHero() {
@@ -16,14 +18,14 @@ export default function ProductHero() {
         backgroundPosition: 'center'
       }}
     >
-      <Typography color="white" align="center" variant="h2" >
+      <Typography color="white" align="center" variant="h2" className={styles.titletext} >
         Engrave Everything!
       </Typography>
       <Typography
         color="white"
         align="center"
         variant="h4"
-        className="title-text"
+        className={styles.titletext}
         sx={{ mb: 4, mt: { sx: 4, sm: 10 }, textShadow: 1}}
       >
         Personalized products and engraving services for lasting memories. 
