@@ -43,7 +43,7 @@ function ProductValues() {
               </Typography>
               <Typography variant="h5">
                 {
-                  'Make a lasting memory for your loved ones! Our machines can engravem, cut and etch almost any surface creating a professional and detailed design.'
+                  'Make a lasting memory for your loved ones! Our machines can engrave, cut and etch almost any surface creating a professional and detailed design.'
                 }
 
                 {
